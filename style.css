@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Dancing+Script:wght@400;600;700&display=swap");
+header {
+  font-family: "Bonheur Royale";
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.todo__list {
+    list-style: none;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 0;
+}
+.todo__list > .todo__items {
+    background: lightgrey;
+    margin: 0.4rem;
+    padding: 0.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    padding-left: 2.5rem;
+    cursor: pointer;
+    transition: .5s ease-in background;
+}
+
+.todo__list > .done {
+    background-color:rgb(148, 238, 148);
+    
+}
+
+.done::before {
+    content: '';
+    border-style: solid;
+    border-color: green;
+    border-width: 0 0 0.3rem 0.3rem;
+    display: inline-block;
+    height: 0.5rem;
+    width: 1rem;
+    transform: rotate(-45deg);
+  
+    position: absolute;
+    top: 0.9rem;
+    left: .3rem;;
+}
